@@ -10,25 +10,25 @@ public class one {
     public static void maxm() {
         one x1=new one();
         Scanner sc=new Scanner(System.in);
-        System.out.println("Enter Temperature 1:");
-        x1.a= sc.nextInt();
-        System.out.println("Enter Temperature 2:");
-        x1.b= sc.nextInt();
-        System.out.println("Enter Temperature 3:");
-        x1.c= sc.nextInt();
-        System.out.println("Enter Temperature 4:");
-        x1.d= sc.nextInt();
-        System.out.println("Enter Temperature 5:");
-        x1.e= sc.nextInt();
         System.out.println("Enter Rainfall 1:");
-        x1.A= sc.nextInt();
+        x1.a= sc.nextInt();
         System.out.println("Enter Rainfall 2:");
-        x1.B= sc.nextInt();
+        x1.b= sc.nextInt();
         System.out.println("Enter Rainfall 3:");
-        x1.C= sc.nextInt();
+        x1.c= sc.nextInt();
         System.out.println("Enter Rainfall 4:");
-        x1.D= sc.nextInt();
+        x1.d= sc.nextInt();
         System.out.println("Enter Rainfall 5:");
+        x1.e= sc.nextInt();
+        System.out.println("Enter Temperature 1:");
+        x1.A= sc.nextInt();
+        System.out.println("Enter Temperature 2:");
+        x1.B= sc.nextInt();
+        System.out.println("Enter Temperature 3:");
+        x1.C= sc.nextInt();
+        System.out.println("Enter Temperature 4:");
+        x1.D= sc.nextInt();
+        System.out.println("Enter Temperature 5:");
         x1.E= sc.nextInt();
 
         if (x1.b>x1.maxrain){
@@ -107,8 +107,15 @@ static class sd extends mn1{
     private int meant;
     int mnx=meant;
       // sd for rain
-    int sg=(((mnb-mnl ^2)/5)^(1/2));
-    int sgt=((mnv-mnx ^2)/5 ^(1/2));
+    int sg1=(mnb-mnl);
+    int sg2= (int) Math.pow(sg1,2);
+    int sgsu=sg2/5;
+    int sg= (int) Math.pow(sgsu,0.5);
+
+    int sgtw=(mnv-mnx);
+    int sgtwe= (int) Math.pow(sgtw,2);
+    int sgu2=sgtwe/5;
+    int sgt= (int) Math.pow(sgu2,0.5);
       void display(){
           System.out.println("The Standard Deviation Of Rainfall is:"+" "+sg);
           System.out.println("The Standard Deviation Of Temperature is:"+" "+sgt);
